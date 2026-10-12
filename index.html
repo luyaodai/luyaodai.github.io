@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luyao (Vivian) Dai</title>
+<meta name="description" content="Luyao (Vivian) Dai — ChemBE PhD candidate and MHS Biostatistics student at Johns Hopkins, focused on biotech investing and commercialization.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --surface: #ffffff;
+    --text: #1d1d1f;
+    --muted: #5f6368;
+    --line: #e6e2da;
+    --accent: #1f5f5b;
+    --accent-soft: #e5efee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121414;
+      --surface: #1a1d1d;
+      --text: #ecebe7;
+      --muted: #a3a8a6;
+      --line: #2c3131;
+      --accent: #7cc4bc;
+      --accent-soft: #1d2d2b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 56px; }
+  nav .brand { font-family: "Fraunces", Georgia, serif; font-weight: 600; text-decoration: none; color: var(--text); }
+  nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; font-size: 15px; }
+  nav ul a { color: var(--muted); text-decoration: none; }
+  nav ul a:hover { color: var(--accent); }
+
+  header.hero { padding: 72px 0 48px; }
+  .hero h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2.2rem, 6vw, 3.2rem);
+    line-height: 1.1;
+    margin: 0 0 16px;
+    letter-spacing: -0.01em;
+  }
+  .hero .tagline { font-size: 1.15rem; color: var(--muted); margin: 0 0 24px; max-width: 34em; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+  .tags li {
+    background: var(--accent-soft); color: var(--accent);
+    font-size: 14px; font-weight: 500;
+    padding: 4px 12px; border-radius: 999px;
+  }
+
+  section { padding: 40px 0; border-top: 1px solid var(--line); }
+  section h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600; font-size: 1.6rem;
+    margin: 0 0 16px;
+  }
+  section p { margin: 0 0 14px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .card h3 { margin: 0 0 4px; font-size: 1.05rem; font-weight: 600; }
+  .card .meta { color: var(--muted); font-size: 14px; margin: 0 0 8px; }
+  .card p:last-child { margin-bottom: 0; }
+  .placeholder { border-style: dashed; color: var(--muted); }
+
+  .timeline { list-style: none; margin: 0; padding: 0; }
+  .timeline li { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 10px 0; }
+  .timeline .when { color: var(--muted); font-size: 14px; padding-top: 2px; }
+  .timeline .what strong { display: block; font-weight: 600; }
+  .timeline .what span { color: var(--muted); font-size: 15px; }
+
+  .btn {
+    display: inline-block;
+    background: var(--accent); color: var(--bg);
+    padding: 10px 18px; border-radius: 8px;
+    font-weight: 500; text-decoration: none;
+  }
+  .links { display: flex; flex-wrap: wrap; gap: 12px 24px; padding: 0; margin: 0; list-style: none; }
+
+  footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+
+  @media (max-width: 560px) {
+    nav ul { gap: 14px; font-size: 14px; }
+    nav ul li.hide-sm { display: none; }
+    .timeline li { grid-template-columns: 1fr; gap: 2px; }
+    header.hero { padding: 48px 0 32px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">Luyao Dai</a>
+    <ul>
+      <li><a href="#writing">Writing</a></li>
+      <li class="hide-sm"><a href="#research">Research</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <header class="hero">
+    <h1>Luyao (Vivian) Dai</h1>
+    <p class="tagline">PhD candidate in Chemical &amp; Biomolecular Engineering and MHS student in Biostatistics at Johns Hopkins. I use a scientist's lens to evaluate biotech companies, clinical data, and the path from lab to market.</p>
+    <ul class="tags">
+      <li>Biotech equity research</li>
+      <li>Venture &amp; commercialization</li>
+      <li>Clinical data &amp; biostatistics</li>
+    </ul>
+  </header>
+
+  <section id="writing">
+    <h2>Investment Writing</h2>
+    <p>Company analyses and models I write to practice thinking like an investor. For educational purposes only, not investment advice.</p>
+
+    <!-- When the stock pitch is ready, replace this placeholder card with:
+    <div class="card">
+      <h3><a href="writing/pitch-COMPANY.pdf">COMPANY (TICKER): one-line thesis</a></h3>
+      <p class="meta">Stock pitch · Month 2026</p>
+      <p>Two sentences: the thesis, the next catalyst, the key risk.</p>
+    </div>
+    -->
+    <div class="card placeholder">
+      <h3>Biotech stock pitch</h3>
+      <p class="meta">Coming November 2026</p>
+      <p>Investment thesis, upcoming clinical catalysts, key risks, and a risk-adjusted valuation.</p>
+    </div>
+    <div class="card placeholder">
+      <h3>rNPV model</h3>
+      <p class="meta">Coming soon</p>
+      <p>A risk-adjusted net present value model of a clinical-stage pipeline.</p>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <p>In the Larman Lab at Johns Hopkins, I am developing a multiplexed, high-throughput platform that profiles antibody responses: which proteins a person's antibodies recognize, measured at scale using cell-surface expressed protein libraries and single-cell sequencing. Tools like these can help reveal what drives autoimmune disease and how people respond to infection and vaccines.</p>
+    <p>Day to day, that means designing experiments, building analysis pipelines in R, and judging whether noisy biological data actually supports a conclusion. That last skill is the one I bring to evaluating clinical results.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience &amp; Education</h2>
+    <ul class="timeline">
+      <li>
+        <div class="when">In progress</div>
+        <div class="what"><strong>PhD, Chemical &amp; Biomolecular Engineering</strong><span>Johns Hopkins University · Larman Lab</span></div>
+      </li>
+      <li>
+        <div class="when">In progress</div>
+        <div class="what"><strong>MHS, Biostatistics</strong><span>Johns Hopkins Bloomberg School of Public Health</span></div>
+      </li>
+      <li>
+        <div class="when">2023</div>
+        <div class="what"><strong>MSE, Chemical &amp; Biomolecular Engineering</strong><span>Johns Hopkins University</span></div>
+      </li>
+      <li>
+        <div class="when">2021 – 2022</div>
+        <div class="what"><strong>Process Engineering Co-op, Clinical Supply Chain Pilot Plant</strong><span>GSK · Collegeville, PA</span></div>
+      </li>
+      <li>
+        <div class="when">2019</div>
+        <div class="what"><strong>Purification Development Lab Automation Co-op</strong><span>Regeneron Pharmaceuticals · Tarrytown, NY</span></div>
+      </li>
+      <li>
+        <div class="when">2016 – 2020</div>
+        <div class="what"><strong>BS, Chemical Engineering &amp; Computer Sciences</strong><span>University of Wisconsin–Madison · Certificate in Biology in Engineering · Graduated with Distinction</span></div>
+      </li>
+    </ul>
+    <p style="margin-top:20px;color:var(--muted)">Full resume available on request via <a href="https://www.linkedin.com/in/luyao-dai">LinkedIn</a>.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>I'm always happy to talk biotech, clinical data, or the move from science into investing. The best way to reach me is a message on LinkedIn.</p>
+    <ul class="links">
+      <li><a href="https://www.linkedin.com/in/luyao-dai">LinkedIn</a></li>
+      <li><a href="https://github.com/luyaodai">GitHub</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Luyao Dai · Content on this site reflects my own views and is not investment advice.</div>
+</footer>
+
+</body>
+</html>
