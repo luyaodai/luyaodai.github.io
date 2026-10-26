@@ -219,6 +219,10 @@
   .card h3 { font-size: 1.08rem; font-weight: 600; }
   .card p { font-size: 15px; color: var(--ink-2); }
   .card--soon { border-style: dashed; background: transparent; }
+  .cards--single { grid-template-columns: 1fr; }
+  .cards--single .card p { max-width: 48em; }
+  a.card:hover { border-color: var(--accent); }
+  a.card:hover h3 { color: var(--accent); }
   .badge {
     align-self: flex-start;
     font-family: var(--mono); font-size: 11.5px; letter-spacing: .05em; text-transform: uppercase;
@@ -288,6 +292,7 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#writing">Writing</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -374,9 +379,24 @@
     </div>
   </section>
 
+  <section class="section" id="projects">
+    <div class="wrap">
+      <header class="sec-head"><span class="sec-num">03</span><h2>Health economics projects</h2></header>
+      <div class="cards cards--single">
+        <a class="card" href="https://github.com/luyaodai/sle-panel-value" target="_blank" rel="noopener" style="text-decoration:none">
+          <span class="meta">Early value assessment · Oct 2026 – present · R</span>
+          <h3>What would a lupus diagnostic panel need to be worth paying for?</h3>
+          <p>A diagnostics company asks what sensitivity, specificity, and price a multiplex autoantibody panel for SLE would need to be cost-effective and affordable for a US commercial health plan. The panel triages rheumatology referral after a positive ANA in primary care. Planned approach: a decision tree and Markov cost-utility model, with costs from MEPS 2018–2022 and 2024, headroom pricing, and a 3-year budget impact.</p>
+          <span class="badge">Phase 1 of 5 complete · scope</span>
+        </a>
+      </div>
+      <p class="note">The panel is hypothetical. Public data and published literature only.</p>
+    </div>
+  </section>
+
   <section class="section" id="experience">
     <div class="wrap">
-      <header class="sec-head"><span class="sec-num">03</span><h2>Experience</h2></header>
+      <header class="sec-head"><span class="sec-num">04</span><h2>Experience</h2></header>
       <div class="xp-list">
         <div class="xp-axis" aria-hidden="true">
           <span></span>
@@ -412,7 +432,7 @@
 
   <section class="section" id="education">
     <div class="wrap">
-      <header class="sec-head"><span class="sec-num">04</span><h2>Education</h2></header>
+      <header class="sec-head"><span class="sec-num">05</span><h2>Education</h2></header>
       <ul class="edu">
         <li><span class="when">In progress</span><div><strong>PhD, Chemical &amp; Biomolecular Engineering</strong><span>Johns Hopkins University · Advisor: H. Benjamin Larman</span></div></li>
         <li><span class="when">In progress</span><div><strong>MHS, Biostatistics</strong><span>Johns Hopkins Bloomberg School of Public Health</span></div></li>
@@ -424,7 +444,7 @@
 
   <section class="section" id="skills">
     <div class="wrap">
-      <header class="sec-head"><span class="sec-num">05</span><h2>Skills</h2></header>
+      <header class="sec-head"><span class="sec-num">06</span><h2>Skills</h2></header>
       <div class="skills">
         <section class="skill-group">
           <h3>Lab</h3>
@@ -444,7 +464,7 @@
 
   <section class="section contact" id="contact">
     <div class="wrap">
-      <header class="sec-head"><span class="sec-num">06</span><h2>Get in touch</h2></header>
+      <header class="sec-head"><span class="sec-num">07</span><h2>Get in touch</h2></header>
       <p>I'm always happy to talk biotech, clinical data, or the move from science into investing. The best way to reach me is a message on LinkedIn.</p>
       <div class="actions">
         <a class="btn btn--primary" href="https://www.linkedin.com/in/luyao-dai" target="_blank" rel="noopener">Message me on LinkedIn</a>
